@@ -9,19 +9,25 @@ layout: default
 [![CodeFactor](https://www.codefactor.io/repository/github/gosh-terminal/gosh/badge)](https://www.codefactor.io/repository/github/gosh-terminal/gosh)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-Welcome to gosh! The end goal of this project is to allow you to use your
+Welcome to gosh! The end goal of this project is to allow you to use the
 terminal for everything! Do anything from math, playing music, sending emails,
 to searching the web but have these things be built into your terminal.
 
 ## Install
 
-### Install dependencies
+### Homebrew (Recommend)
+
+```bash
+brew install gosh-terminal/homebrew-gosh/gosh
+```
+
+### Gitpod
 
 Use Gitpod, everything is preinstalled.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gosh-terminal/gosh)
 
-### One-line curl installer (Recommended)
+### One-line curl installer
 
 ```bash
 curl -s "https://raw.githubusercontent.com/gosh-terminal/gosh/master/tools/setup2.0.bash" | bash
@@ -35,6 +41,14 @@ git clone "https://github.com/gosh-terminal/gosh.git"
 cd gosh
 go install
 export GOSH_HOME="$GOPATH/bin"
+```
+
+## DH Make
+
+```bash
+git clone "https://github.com/gosh-terminal/gosh.git"
+cd gosh
+dh_auto_install
 ```
 
 ![Example of gosh](https://github.com/gosh-terminal/gosh/blob/master/.github/images/example.png?raw=true)
