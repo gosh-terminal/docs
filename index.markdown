@@ -40,7 +40,8 @@ source ~/.bashrc
 git clone "https://github.com/gosh-terminal/gosh.git"
 cd gosh
 go install
-export GOSH_HOME="$GOPATH/bin"
+echo "export GOSH_HOME=\"$GOPATH/bin\"" >>~/.bashrc
+source ~/.bashrc
 ```
 
 ## DH Make
